@@ -33,8 +33,6 @@ public:
 
 Explanation [here](https://aaronice.gitbook.io/lintcode/string/add-binary)
 
-### Approach
-
 1. Initialize variables `i` and `j` as indices pointing to the least significant digits of `a` and `b` respectively, and `carry` as 0.
 2. Initialize an empty string `res` to store the result.
 3. Iterate through the strings `a` and `b` from right to left:
@@ -108,3 +106,30 @@ instead, use a hashmap to map the number of 0s, 1s and 2s, clear the array, and 
 
 find min element in row, push it to an array, find max element in row, push it to another array. 
 from both arrays, match elements from both arrays in the original matrix to find lucky numbers.
+
+```cpp
+class Solution {
+public:
+    vector<int> luckyNumbers (vector<vector<int>>& matrix) {
+        vector<int> rows, cols;
+        int min = 0, max = 0;
+        int size = matrix[0].size();
+        for (int i = 0; i < size; i++){
+            for (int j = 0; j < size; j++ ){
+                min = min > matrix[i][j] ? matrix[i][j] : min;
+            }
+            rows.push_back(min);
+            min = 0; 
+        }
+
+        for (int i = 0; i < size; i++){
+            for (int j = 0; j < size; j++){
+                max = max < matrix[j][i] ? matrix[j][i] : max;
+            }
+            cols.push_back(max);
+            max = 0;
+        }
+        
+    }
+};
+```
