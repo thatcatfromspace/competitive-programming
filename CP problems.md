@@ -103,3 +103,8 @@ alternatively, reduce time complexity to `O(n)` by using a hashmap.
 did not know how to proceed. tried to naively sort the array in place resulting in around `O(n)` complexity.
 
 instead, use a hashmap to map the number of 0s, 1s and 2s, clear the array, and then push them back in the right order with the count from the hashmap.
+
+## Lucky numbers in matrix - [LeetCode](https://leetcode.com/problems/lucky-numbers-in-a-matrix)
+
+find min element in row, push it to an array, find max element in row, push it to another array. 
+from both arrays, match elements from both arrays in the original matrix to find lucky numbers.
