@@ -52,8 +52,8 @@ initial thoughts:
 Simplest approach with Python:
 
 ```python
-	def last_word(word):
-		return len(word.strip().split(' ')[-1])
+def last_word(word):
+	return len(word.strip().split(' ')[-1])
 ```
 
 
