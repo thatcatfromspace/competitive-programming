@@ -1,5 +1,4 @@
-<hr> 
-
+## Binary addition - [LeetCode](https://leetcode.com/problems/add-binary)
 
 ```cpp
 class Solution {
@@ -46,7 +45,7 @@ Explanation [here](https://aaronice.gitbook.io/lintcode/string/add-binary)
 5. Reverse the result string to get the correct binary representation of the sum.
 6. Return the result string.
 
-## Length of last word - [Leetcode](https://leetcode.com/problems/length-of-last-word/)
+## Length of last word - [LeetCode](https://leetcode.com/problems/length-of-last-word/)
 
 initial thoughts:
 
@@ -60,7 +59,7 @@ Simplest approach with Python:
 ```
 
 
-## Climbing stairs - [Leetcode](https://leetcode.com/problems/climbing-stairs)
+## Climbing stairs - [LeetCode](https://leetcode.com/problems/climbing-stairs)
 
 initial thoughts:
 
@@ -69,7 +68,7 @@ initial thoughts:
 
 Detailed explanation [here](https://leetcode.com/problems/climbing-stairs/solutions/3708750/4-method-s-beat-s-100-c-java-python-beginner-friendly/)
 
-## Highest altitude - [Leetcode](https://leetcode.com/problems/find-the-highest-altitude)
+## Highest altitude - [LeetCode](https://leetcode.com/problems/find-the-highest-altitude)
 
 apply the concept of [prefix sum](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/) to find the maximum altitude.
 
@@ -78,21 +77,21 @@ tip: `*max_element(vector.begin(), vector.end());` returns the maximum number in
 tip 2: if it is not explicitly stated that you cannot modify the given array/vector, play around with it to save memory usage.
 
 
-## Pivot index - [Leetcode](https://leetcode.com/problems/find-pivot-index)
+## Pivot index - [LeetCode](https://leetcode.com/problems/find-pivot-index)
 
 Find sum of all elements, then start comparing left sum and right sum from the end.
 
 Solution [here](https://leetcode.com/problems/find-pivot-index/solutions/5173369/easy-c-solution/?envType=study-plan-v2&envId=leetcode-75)
 
 
-## First occurrence of a string - [Leetcode](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string)
+## First occurrence of a string - [LeetCode](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string)
 
 Thought about implementing a two pointer approach, but got stuck with non-existent cases and repeated letters.
 
 Instead, **go with finding substrings sequentially**. from `i = 0 to biggerWord.size()`.
 
 
-## Majority element - [Leetcode](https://leetcode.com/problems/majority-element)
+## Majority element - [LeetCode](https://leetcode.com/problems/majority-element)
 
 
 easy. sort the array, the middle element should be your answer.
