@@ -107,29 +107,12 @@ instead, use a hashmap to map the number of 0s, 1s and 2s, clear the array, and 
 find min element in row, push it to an array, find max element in row, push it to another array. 
 from both arrays, match elements from both arrays in the original matrix to find lucky numbers.
 
-```cpp
-class Solution {
-public:
-    vector<int> luckyNumbers (vector<vector<int>>& matrix) {
-        vector<int> rows, cols;
-        int min = 0, max = 0;
-        int size = matrix[0].size();
-        for (int i = 0; i < size; i++){
-            for (int j = 0; j < size; j++ ){
-                min = min > matrix[i][j] ? matrix[i][j] : min;
-            }
-            rows.push_back(min);
-            min = 0; 
-        }
+## Remove duplicate from sorted array - [LeetCode](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 
-        for (int i = 0; i < size; i++){
-            for (int j = 0; j < size; j++){
-                max = max < matrix[j][i] ? matrix[j][i] : max;
-            }
-            cols.push_back(max);
-            max = 0;
-        }
-        
-    }
-};
-```
+two pointer approach. maintain a pointer from the beginning and a right pointer `ptr = 1`, move ptr when `nums[i] != nums[ptr-1]`, and return `ptr` as we need to return the number of unique elements in the array, which is just equal to `ptr`.
+
+## Rotate array
+
+naive approach is to mod the index of every element plus `k` and place them into a new array, i.e., `newArray[(i+k) % size] = nums[i]`, and the copy them back into `nums` so it gives **the illusion** of it being an in-place algorithm.
+
+better approach is applying reverse operation 3 times, first on the entire array, then from the beginning to the`k`th element, and then from the `k`th element to the end.
