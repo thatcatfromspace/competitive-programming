@@ -33,7 +33,7 @@ public:
 
 Explanation [here](https://aaronice.gitbook.io/lintcode/string/add-binary)
 
-# Approach
+### Approach
 
 1. Initialize variables `i` and `j` as indices pointing to the least significant digits of `a` and `b` respectively, and `carry` as 0.
 2. Initialize an empty string `res` to store the result.
