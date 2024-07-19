@@ -29,7 +29,8 @@ public:
         reverse(res.begin(), res.end());
         return res;
     }
-};```
+};
+```
 
 Explanation [here](https://aaronice.gitbook.io/lintcode/string/add-binary)
 
