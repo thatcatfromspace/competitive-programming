@@ -110,7 +110,7 @@ from both arrays, match elements from both arrays in the original matrix to find
 
 ## Remove duplicate from sorted array - [LeetCode](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 
-two pointer approach. maintain a pointer from the beginning and a right pointer `ptr = 1`, move ptr when `nums[i] != nums[ptr-1]`, and return `ptr` as we need to return the number of unique elements in the array, which is just equal to `ptr`.
+two pointer approach. maintain a pointer `i` from the beginning and a right pointer `ptr = 1`, move ptr when `nums[i] != nums[ptr-1]`, and return `ptr` as we need to return the number of unique elements in the array, which is just equal to `ptr`.
 
 ## Rotate array - [LeetCode](https://leetcode.com/problems/rotate-array/)
 
