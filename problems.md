@@ -1,4 +1,4 @@
-First few problems are random. Then questions are covered topicwise from [Strivers' A2Z DSA Course](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2).
+first few problems are random, then questions are covered topicwise from [striver's dsa course](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2).
 
 ## Binary addition - [LeetCode](https://leetcode.com/problems/add-binary)
 
