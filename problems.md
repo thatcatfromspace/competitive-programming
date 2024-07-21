@@ -33,15 +33,15 @@ public:
 
 Explanation [here](https://aaronice.gitbook.io/lintcode/string/add-binary)
 
-1. Initialize variables `i` and `j` as indices pointing to the least significant digits of `a` and `b` respectively, and `carry` as 0.
-2. Initialize an empty string `res` to store the result.
-3. Iterate through the strings `a` and `b` from right to left:
-    - Add the current digits of `a` and `b` along with the carry.
-    - Update carry as necessary.
-    - Append the sum modulo 2 to the result string.
-4. If there is a carry after iterating through both strings, append it to the result string.
-5. Reverse the result string to get the correct binary representation of the sum.
-6. Return the result string.
+1. initialize variables `i` and `j` as indices pointing to the least significant digits of `a` and `b` respectively, and `carry` as 0.
+2. initialize an empty string `res` to store the result.
+3. iterate through the strings `a` and `b` from right to left:
+    - add the current digits of `a` and `b` along with the carry.
+    - update carry as necessary.
+    - append the sum modulo 2 to the result string.
+4. if there is a carry after iterating through both strings, append it to the result string.
+5. reverse the result string to get the correct binary representation of the sum.
+6. return the result string.
 
 ## Length of last word - [LeetCode](https://leetcode.com/problems/length-of-last-word/)
 
@@ -49,7 +49,7 @@ initial thoughts:
 
 - must keep track of penultimate and last space 
 
-Simplest approach with Python:
+simplest approach with Python:
 
 ```python
 def last_word(word):
@@ -77,9 +77,9 @@ tip 2: if it is not explicitly stated that you cannot modify the given array/vec
 
 ## Pivot index - [LeetCode](https://leetcode.com/problems/find-pivot-index)
 
-Find sum of all elements, then start comparing left sum and right sum from the end.
+find sum of all elements, then start comparing left sum and right sum from the end.
 
-Solution [here](https://leetcode.com/problems/find-pivot-index/solutions/5173369/easy-c-solution/?envType=study-plan-v2&envId=leetcode-75)
+solution [here](https://leetcode.com/problems/find-pivot-index/solutions/5173369/easy-c-solution/?envType=study-plan-v2&envId=leetcode-75)
 
 
 ## First occurrence of a string - [LeetCode](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string)
@@ -90,7 +90,6 @@ Instead, **go with finding substrings sequentially**. from `i = 0 to biggerWord.
 
 
 ## Majority element - [LeetCode](https://leetcode.com/problems/majority-element)
-
 
 easy. sort the array, the middle element should be your answer.
 
@@ -111,8 +110,18 @@ from both arrays, match elements from both arrays in the original matrix to find
 
 two pointer approach. maintain a pointer from the beginning and a right pointer `ptr = 1`, move ptr when `nums[i] != nums[ptr-1]`, and return `ptr` as we need to return the number of unique elements in the array, which is just equal to `ptr`.
 
-## Rotate array
+## Rotate array - [LeetCode](https://leetcode.com/problems/rotate-array/)
 
 naive approach is to mod the index of every element plus `k` and place them into a new array, i.e., `newArray[(i+k) % size] = nums[i]`, and the copy them back into `nums` so it gives **the illusion** of it being an in-place algorithm.
 
 better approach is applying reverse operation 3 times, first on the entire array, then from the beginning to the`k`th element, and then from the `k`th element to the end.
+
+## Find missing element in range - [LeetCode](https://leetcode.com/problems/missing-number/)
+
+lakshman is brilliant. find the sum of numbers from range `[0, nums.size()]` and then subtract it from actual sum of the given array (psst, `std::accumulate()`) and the difference is the missing numbers. absolutely genius.
+
+## Maximum consecutive ones - [LeetCode](https://leetcode.com/problems/max-consecutive-ones/)
+
+my approach was a bit convoluted. set `lastZero = -1` and then start looking for zeroes in the array. on the first encounter, set `highest = i` (index of the first 0) and `lastZero` to the same as well. compare subsequent differences and if the last element is 1, make sure to check if the highest condition still satisfies. 
+
+note: edge case optimization (`nums.size() <= 1) helped me get slightly better time
