@@ -126,4 +126,4 @@ lakshman is brilliant. find the sum of numbers from range `[0, nums.size()]` and
 
 my approach was a bit convoluted. set `lastZero = -1` and then start looking for zeroes in the array. on the first encounter, set `highest = i` (index of the first 0) and `lastZero` to the same as well. compare subsequent differences and if the last element is 1, make sure to check if the highest condition still satisfies. 
 
-note: edge case optimization (`nums.size() <= 1) helped me get slightly better time.
+note: edge case optimization (`nums.size() <= 1`) helped me get slightly better time.
