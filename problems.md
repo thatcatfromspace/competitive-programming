@@ -143,3 +143,7 @@ associated g4g article [here](https://geeksforgeeks.org/largest-sum-contiguous-s
 ## Best time to buy and sell stock - [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
 classic sliding window problem, can also be related to Kadane's algo (how?). create two variables `lowest = prices[0]` and `ans = INT_MIN`, iterate over each element `price` to see if the next price is smaller and then set `ans` to `max(ans, price - lowest)`.
+
+## Sort the people - [LeetCode](https://leetcode.com/problems/sort-the-people)
+
+one of the most easiest, most straightforward questions i've seen. throw the heights mapped to the names into an `unordered_map` and then sort, reverse and throw the names back into another new array in the sorted order and return the array.
