@@ -138,4 +138,8 @@ note: bitwise operations always yield an INTEGER, not a BOOLEAN.
 
 Use two variables `max_ending_here = INT_MIN` and `max_so_far = 0`, in a `for` loop on all the elements in the given array, increment `max_ending_here` by the current element, and then compare `max_ending_here` and `max_so_far`, if the former is larger, set `max_so_far` to `max_ending_here`, then, if `max_ending_here < 0`, set it to 0. return `max_starting_here`.
 
-associated gfg article [here](https://geeksforgeeks.org/largest-sum-contiguous-subarray/).
+associated g4g article [here](https://geeksforgeeks.org/largest-sum-contiguous-subarray/).
+
+## Best time to buy and sell stock - [LeetCode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+
+classic sliding window problem, can also be related to Kadane's algo (how?). create two variables `lowest = prices[0]` and `ans = INT_MIN`, iterate over each element `price` to see if the next price is smaller and then set `ans` to `max(ans, price - lowest)`.
