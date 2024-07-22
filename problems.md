@@ -133,3 +133,9 @@ note: edge case optimization (`nums.size() <= 1`) helped me get slightly better 
 XOR! xor all elements in the array with `ans = 0`, the resulting `ans` is the missing number. 🤯
 
 note: bitwise operations always yield an INTEGER, not a BOOLEAN.
+
+## Maximum subarray aka Kadane's algorithm - [LeetCode](https://leetcode.com/problems/maximum-subarray/)
+
+Use two variables `max_ending_here = INT_MIN` and `max_so_far = 0`, in a `for` loop on all the elements in the given array, increment `max_ending_here` by the current element, and then compare `max_ending_here` and `max_so_far`, if the former is larger, set `max_so_far` to `max_ending_here`, then, if `max_ending_here < 0`, set it to 0. return `max_starting_here`.
+
+associated gfg article [here](https://geeksforgeeks.org/largest-sum-contiguous-subarray/).
