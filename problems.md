@@ -157,3 +157,7 @@ one of the most easiest, most straightforward questions i've seen. throw the hei
 same as rotate array but with a linked list. the mod approach did not work (too many edge case violations), instead manually cut off the list at `count - k -1` and reattach this to the beginning of the linked list. 
 
 very intuitive solution (by me) [here](https://leetcode.com/problems/rotate-list/submissions/1330229947/)
+
+## Reverse linked list - [LeetCode](https://leetcode.com/problems/reverse-linked-list)
+
+use a stack to store the elements and then store it in the linked list backwards.
