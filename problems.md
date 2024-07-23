@@ -151,3 +151,9 @@ classic sliding window problem, can also be related to Kadane's algo (how?). cre
 ## Sort the people - [LeetCode](https://leetcode.com/problems/sort-the-people)
 
 one of the most easiest, most straightforward questions i've seen. throw the heights mapped to the names into an `unordered_map` and then sort, reverse and throw the names back into another new array in the sorted order and return the array.
+
+## Rotate list - [LeetCode](https://leetcode.com/problems/rotate-list/)
+
+same as rotate array but with a linked list. the mod approach did not work (too many edge case violations), instead manually cut off the list at `count - k -1` and reattach this to the beginning of the linked list. 
+
+very intuitive solution (by me) [here](https://leetcode.com/problems/rotate-list/submissions/1330229947/)
