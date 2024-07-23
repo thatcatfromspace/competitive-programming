@@ -161,3 +161,7 @@ very intuitive solution (by me) [here](https://leetcode.com/problems/rotate-list
 ## Reverse linked list - [LeetCode](https://leetcode.com/problems/reverse-linked-list)
 
 use a stack to store the elements and then store it in the linked list backwards.
+
+## Search insert position - [LeetCode](https://leetcode.com/problems/search-insert-position)
+
+binary search your way to find the given element in the array, and then return low (this is equivalent to finding floor) for it to be the position where the number should be inserted.
