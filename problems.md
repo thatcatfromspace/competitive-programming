@@ -128,6 +128,10 @@ my approach was a bit convoluted. set `lastZero = -1` and then start looking for
 
 note: edge case optimization (`nums.size() <= 1`) helped me get slightly better time.
 
+edit: **better approach**
+
+maintain two variables `currSum` and `prevSum` both set to 0 initially. whenever a `1` is encountered, increment `currSum`, otherwise, set `prevSum` to `max(currentSum, prevSum)` and return the maximum of both.
+
 ## Single number - [LeetCode](https://leetcode.com/problems/single-number/)
 
 XOR! xor all elements in the array with `ans = 0`, the resulting `ans` is the missing number. 🤯
