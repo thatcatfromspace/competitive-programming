@@ -166,6 +166,15 @@ use a stack to store the elements and then store it in the linked list backwards
 
 binary search your way to find the given element in the array, and then return low (this is equivalent to finding floor) for it to be the position where the number should be inserted.
 
-## Two sum
+## Two sum - [LeetCode](https://leetcode.com/problems/two-sum)
 
 simplest one pass algorithm is to create a hashmap of the numbers in their array and their index. as the `for` loop iterates, return the number and its complement if it exists or store the number in the array. 
+
+## Reverse words in a string - [LeetCode](https://leetcode.com/problems/reverse-words-in-a-string)
+
+shamelessly use python. genius one liner crafted by me.
+
+```py
+ def reverseWords(self, s: str) -> str:
+        return ' '.join(s.strip().split()[::-1])
+```
