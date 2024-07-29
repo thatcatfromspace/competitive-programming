@@ -178,3 +178,7 @@ shamelessly use python. genius one liner crafted by me.
  def reverseWords(self, s: str) -> str:
         return ' '.join(s.strip().split()[::-1])
 ```
+
+## Check if LL is a palindrome - [LeetCode](https://leetcode.com/problems/palindrome-linked-list)
+
+add the elements of the LL to an array `arr`, compare if `arr[i]` equals `arr[size-i-1]` for `i = 0 to size/2`.  
