@@ -182,3 +182,11 @@ shamelessly use python. genius one liner crafted by me.
 ## Check if LL is a palindrome - [LeetCode](https://leetcode.com/problems/palindrome-linked-list)
 
 add the elements of the LL to an array `arr`, compare if `arr[i]` equals `arr[size-i-1]` for `i = 0 to size/2`.  
+
+## Valid anagram - [LeetCode](https://leetcode.com/problems/valid-anagram)
+
+approach 1: `O(n*logn)` - separate the array into characters, push it into 2 arrays, sort the arrays and compare
+approach 2: `O(n)` - add the elements of first string to a hashmap, and compare the hash values of second string to first; if `hashmap[letter] == 0`, then return false. [solution](https://leetcode.com/problems/valid-anagram/submissions/1340520551/)
+
+
+
