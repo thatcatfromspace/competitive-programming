@@ -189,6 +189,10 @@ approach 1: `O(n*logn)` - separate the array into characters, push it into 2 arr
 approach 2: `O(n)` - add the elements of first string to a hashmap, and compare the hash values of second string to first; if `hashmap[letter] == 0`, then return false. [solution](https://leetcode.com/problems/valid-anagram/submissions/1340520551/)
 
 
-## Rotate string
+## Rotate string - [LeetCode](https://leetcode.com/problems/rotate-string)
 
 iterate through the string adding the first letter of the string to the end each time, and compare the resultant **substring** to `goal`.
+
+## Add two numbers - [LeetCode](https://leetcode.com/problems/add-two-numbers/)
+
+straightforward approach, for every element, `sum = (l1->val + l2->val + carry) % 10` and `carry = ((l1->val + l2->val + carry) / 10`. be sure to add extra carry to the end after you're done adding.
