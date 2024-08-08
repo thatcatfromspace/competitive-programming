@@ -214,3 +214,8 @@ quite elegant submission [here](https://leetcode.com/problems/kth-distinct-strin
 
 
 is the most important step you need to understand.
+
+
+## Minimum bit flips required
+
+XOR the given numbers to find the number of differing digits. then increment count everytime a `1` is encountered (by `num & 1`) and right shift the pointer num.
