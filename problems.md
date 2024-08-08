@@ -196,3 +196,14 @@ iterate through the string adding the first letter of the string to the end each
 ## Add two numbers - [LeetCode](https://leetcode.com/problems/add-two-numbers/)
 
 straightforward approach, for every element, `sum = (l1->val + l2->val + carry) % 10` and `carry = ((l1->val + l2->val + carry) / 10`. be sure to add extra carry to the end after you're done adding.
+
+## Minimum pushes II - [LeetCode](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/)
+
+for the longest time i kept thinking that the letter corresponding to the count matters. it doesn't.
+add the count of each letter to an array, sort the array, and then itertate over each element of the array.
+
+```cpp
+totalPresses += (i / 8 + 1) * count[i]
+```
+
+is the most important step you need to understand.
