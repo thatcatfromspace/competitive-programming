@@ -206,4 +206,11 @@ add the count of each letter to an array, sort the array, and then itertate over
 totalPresses += (i / 8 + 1) * count[i]
 ```
 
+## Kth distinct string in array - [LeetCode](https://leetcode.com/problems/kth-distinct-string-in-an-array/)
+
+map every string to an array. if mapped value of string equals 1, it is distinct. then iterate over every string in the array, and for every unique encountered, reduce `k` by 1. if `k == 0`, return that string.
+
+quite elegant submission [here](https://leetcode.com/problems/kth-distinct-string-in-an-array/submissions/1348559365).
+
+
 is the most important step you need to understand.
