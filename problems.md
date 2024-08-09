@@ -219,3 +219,7 @@ is the most important step you need to understand.
 ## Minimum bit flips required
 
 XOR the given numbers to find the number of differing digits. then increment count everytime a `1` is encountered (by `num & 1`) and right shift the pointer num.
+
+## Linked list cycle
+
+classic tortoise and hare pointer problem. while `fast && fast->next`, iterate until both pointers are equal, return true if yes, else there is no cycle in the list.
