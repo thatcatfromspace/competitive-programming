@@ -216,10 +216,14 @@ quite elegant submission [here](https://leetcode.com/problems/kth-distinct-strin
 is the most important step you need to understand.
 
 
-## Minimum bit flips required
+## Minimum bit flips required - [LeetCode]()
 
 XOR the given numbers to find the number of differing digits. then increment count everytime a `1` is encountered (by `num & 1`) and right shift the pointer num.
 
-## Linked list cycle
+## Linked list cycle [LeetCode](https://leetcode.com/problems/linked-list-cycle)
 
 classic tortoise and hare pointer problem. while `fast && fast->next`, iterate until both pointers are equal, return true if yes, else there is no cycle in the list.
+
+## Largest odd number in string - [LeetCode](https://leetcode.com/problems/largest-odd-number-in-string)
+
+the point is to start counting from the **end**, not the start. if the current digit is even, change the return string to a substring of the original string from `0` to `i+1`.
