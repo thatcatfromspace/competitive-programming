@@ -212,10 +212,6 @@ map every string to an array. if mapped value of string equals 1, it is distinct
 
 quite elegant submission [here](https://leetcode.com/problems/kth-distinct-string-in-an-array/submissions/1348559365).
 
-
-is the most important step you need to understand.
-
-
 ## Minimum bit flips required - [LeetCode]()
 
 XOR the given numbers to find the number of differing digits. then increment count everytime a `1` is encountered (by `num & 1`) and right shift the pointer num.
