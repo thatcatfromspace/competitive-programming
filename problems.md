@@ -222,4 +222,10 @@ classic tortoise and hare pointer problem. while `fast && fast->next`, iterate u
 
 ## Largest odd number in string - [LeetCode](https://leetcode.com/problems/largest-odd-number-in-string)
 
-the point is to start counting from the **end**, not the start. if the current digit is even, change the return string to a substring of the original string from `0` to `i+1`.
+the point is to start counting from the **end**, not the start. if the current digit is even, change the return string to a substring of the original string from `0` to `i+1`.\
+
+## Count and say - [LeetCode](https://leetcode.com/problems/count-and-say)
+
+immediately arrived at the logic to find the run length encoding of the given string, however, was stuck with handling the last character of the string. to handle that, the solution is embarrassingly simple. just add a whitespace to the end of the string.
+
+my solution [here](https://leetcode.com/problems/count-and-say/submissions/1351865671/)
