@@ -229,3 +229,7 @@ the point is to start counting from the **end**, not the start. if the current d
 immediately arrived at the logic to find the run length encoding of the given string, however, was stuck with handling the last character of the string. to handle that, the solution is embarrassingly simple. just add a whitespace to the end of the string.
 
 my solution [here](https://leetcode.com/problems/count-and-say/submissions/1351865671/)
+
+## Assign cookies - [LeetCode]((https://leetcode.com/problems/assign-cookies)
+
+sort both the size and greed arrays. maintain a pointer for each array `sp` and `gp` and incrmement both if `s[sp] >= g[gp]`, else just increment the size pointer.
