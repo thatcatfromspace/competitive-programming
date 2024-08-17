@@ -230,6 +230,6 @@ immediately arrived at the logic to find the run length encoding of the given st
 
 my solution [here](https://leetcode.com/problems/count-and-say/submissions/1351865671/)
 
-## Assign cookies - [LeetCode]((https://leetcode.com/problems/assign-cookies)
+## Assign cookies - [LeetCode](https://leetcode.com/problems/assign-cookies)
 
 sort both the size and greed arrays. maintain a pointer for each array `sp` and `gp` and incrmement both if `s[sp] >= g[gp]`, else just increment the size pointer.
