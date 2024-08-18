@@ -251,3 +251,9 @@ a = a ^ b;
 it is guaranteed that `a` and `b` are swapped. 
 
 for more bit manipulation techniques, see [here]()https://leetcode.com/discuss/general-discussion/1073221/All-about-Bitwise-Operations-Beginner-Intermediate
+
+## Subsets - [LeetCode](https://leetcode.com/problems/subsets)
+
+since i already knew that a bit manipulation approach has to be taken, i immediately found that for an array of size `k`, numbers from 0 to `2^k` can be used to mask indices of the actual array. however, the implementation was BAD, optimal approach [here](https://leetcode.com/problems/subsets/solutions/5186398/faster-less-mem-3-methods-detailed-approach-recursion-bit-mani-iterative-python-java-c/)
+
+
