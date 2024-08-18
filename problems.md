@@ -237,3 +237,17 @@ sort both the size and greed arrays. maintain a pointer for each array `sp` and 
 ## Power of two - [LeetCode](https://leetcode.com/problems/power-of-two)
 
 find `n & (n - 1)`. powers of two are of the form `1000...` and one less that `n` will always be of the form `0111...`, hence the result is always `0` if `n` is a power of 2. 
+
+## Swap two numbers - [GeeksForGeeks](https://www.geeksforgeeks.org/problems/swap-two-numbers3844/1)
+
+there is a very simple trick to swap two numbers without using any extra memory.
+
+```cpp
+a = a ^ b;
+b = a ^ b;
+a = a ^ b;
+```
+
+it is guaranteed that `a` and `b` are swapped. 
+
+for more bit manipulation techniques, see [here]()https://leetcode.com/discuss/general-discussion/1073221/All-about-Bitwise-Operations-Beginner-Intermediate
