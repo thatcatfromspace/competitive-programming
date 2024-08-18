@@ -222,7 +222,7 @@ classic tortoise and hare pointer problem. while `fast && fast->next`, iterate u
 
 ## Largest odd number in string - [LeetCode](https://leetcode.com/problems/largest-odd-number-in-string)
 
-the point is to start counting from the **end**, not the start. if the current digit is even, change the return string to a substring of the original string from `0` to `i+1`.\
+the point is to start counting from the **end**, not the start. if the current digit is even, change the return string to a substring of the original string from `0` to `i+1`.
 
 ## Count and say - [LeetCode](https://leetcode.com/problems/count-and-say)
 
@@ -233,3 +233,7 @@ my solution [here](https://leetcode.com/problems/count-and-say/submissions/13518
 ## Assign cookies - [LeetCode](https://leetcode.com/problems/assign-cookies)
 
 sort both the size and greed arrays. maintain a pointer for each array `sp` and `gp` and incrmement both if `s[sp] >= g[gp]`, else just increment the size pointer.
+
+## Power of two - [LeetCode](https://leetcode.com/problems/power-of-two)
+
+find `n & (n - 1)`. powers of two are of the form `1000...` and one less that `n` will always be of the form `0111...`, hence the result is always `0` if `n` is a power of 2. 
