@@ -256,7 +256,7 @@ for more bit manipulation techniques, see [here]()https://leetcode.com/discuss/g
 
 since i already knew that a bit manipulation approach has to be taken, i immediately found that for an array of size `k`, numbers from 0 to `2^k` can be used to mask indices of the actual array. however, the implementation was BAD, optimal approach [here](https://leetcode.com/problems/subsets/solutions/5186398/faster-less-mem-3-methods-detailed-approach-recursion-bit-mani-iterative-python-java-c/)
 
-## Lemonade stand [LeetCode](https://leetcode.com/problems/lemonade-change)
+## Lemonade stand - [LeetCode](https://leetcode.com/problems/lemonade-change)
 
 greedy approach is the answer. solved the problem initially without realizing that the number of $5 and $10 dollar notes need to be kept in count, so used a bunch of if-else conditions to keep that in track as well. for each transaction, manually check the number of both bills present and then provide change accordingly.
 
