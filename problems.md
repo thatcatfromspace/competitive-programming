@@ -260,3 +260,6 @@ since i already knew that a bit manipulation approach has to be taken, i immedia
 
 greedy approach is the answer. solved the problem initially without realizing that the number of $5 and $10 dollar notes need to be kept in count, so used a bunch of if-else conditions to keep that in track as well. for each transaction, manually check the number of both bills present and then provide change accordingly.
 
+## Flood fill - [LeetCode](https://leetcode.com/problems/flood-fill)
+
+dfs or bfs can be used here. we take the `delCol` and `delRow` approach to calculate the 4-directional neighbors of the current matrix cell. very similar to the [rotten oranges](https://leetcode.com/problems/rotten-oranges) problem.
