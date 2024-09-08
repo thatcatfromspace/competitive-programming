@@ -267,3 +267,7 @@ dfs or bfs can be used here. we take the `delCol` and `delRow` approach to calcu
 ## Ransom note - [LeetCode](https://leetcode.com/problems/ransom-note)
 
 take an `unoreder_map` approach. for every letter in `magazine`, map it and subtract every occurence of the letter from the map when iterating through `ransomNote`. if any letter does not exist, i.e., `map[letter] < 1`, return false. felt it was very similar to [minimum presses for word](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/)
+
+## Number of 1 bits - [LeetCode](https://leetcode.com/problems/number-of-1-bits)
+
+genius bit manipulation. for `i` in range 31 - 0, successively right shift the given number by `i` places and perform `&` with `1`. on each shift, we can determine if the last bit after the shift is `1`, thereby incrementing count everytime that `((n >> i) & 1 == 1` succeeds.
