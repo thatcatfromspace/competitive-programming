@@ -263,3 +263,7 @@ greedy approach is the answer. solved the problem initially without realizing th
 ## Flood fill - [LeetCode](https://leetcode.com/problems/flood-fill)
 
 dfs or bfs can be used here. we take the `delCol` and `delRow` approach to calculate the 4-directional neighbors of the current matrix cell. very similar to the [rotten oranges](https://leetcode.com/problems/rotten-oranges) problem.
+
+## Ransom note - [LeetCode](https://leetcode.com/problems/ransom-note)
+
+take an `unoreder_map` approach. for every letter in `magazine`, map it and subtract every occurence of the letter from the map when iterating through `ransomNote`. if any letter does not exist, i.e., `map[letter] < 1`, return false. felt it was very similar to [minimum presses for word](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/)
