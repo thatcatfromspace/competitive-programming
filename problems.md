@@ -271,3 +271,13 @@ take an `unoreder_map` approach. for every letter in `magazine`, map it and subt
 ## Number of 1 bits - [LeetCode](https://leetcode.com/problems/number-of-1-bits)
 
 genius bit manipulation. for `i` in range 31 - 0, successively right shift the given number by `i` places and perform `&` with `1`. on each shift, we can determine if the last bit after the shift is `1`, thereby incrementing count everytime that `((n >> i) & 1 == 1` succeeds.
+
+## Roman to integer - [LeetCode](https://leetcode.com/problems/roman-to-integer)
+
+the trick is to iterate from behind the string. if the `i - 1`th bit is lesser than the `i`th bit, for example `IV`, add the resultant of their difference to the resultant integer or just add it to the integer.
+
+## Number of islands - [LeetCode](https://leetcode.com/problems/number-of-islands)
+
+for every cell in the matrix, perform bfs/dfs on the matrix if the current cell is `1`. if the current cell has not been visitted (vistted row, columns are kept in track using an `unordered_set`) and for each unvisitted `1`, an island is added.
+
+key takeaway is the difference between usage of `unoreder_map` and `unordered_set`. 
