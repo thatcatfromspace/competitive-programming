@@ -281,3 +281,7 @@ the trick is to iterate from behind the string. if the `i - 1`th bit is lesser t
 for every cell in the matrix, perform bfs/dfs on the matrix if the current cell is `1`. if the current cell has not been visitted (vistted row, columns are kept in track using an `unordered_set`) and for each unvisitted `1`, an island is added.
 
 key takeaway is the difference between usage of `unoreder_map` and `unordered_set`. 
+
+## Same tree - [LeetCode](https://leetcode.com/problems/same-tree)
+
+immediately knew it was a recursive dfs solution. but had problems defining the true/false conditions. the key is to return the logical AND: `isSameTree(p->left, q->left) && isSameTree(p->right, q->right)` as the final answer.
