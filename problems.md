@@ -285,3 +285,11 @@ key takeaway is the difference between usage of `unoreder_map` and `unordered_se
 ## Same tree - [LeetCode](https://leetcode.com/problems/same-tree)
 
 immediately knew it was a recursive dfs solution. but had problems defining the true/false conditions. the key is to return the logical AND: `isSameTree(p->left, q->left) && isSameTree(p->right, q->right)` as the final answer.
+
+## Maximum points you can obtain from cards - [LeetCode](https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards)
+
+the approach is a two pointer sliding window that calculates the maximum sum by removing one element from the start and adding an element from the end. genius stuff.
+
+
+![a539e5d3-3faa-43d3-bfcd-8a6549e4589b_1656213784 1710274](https://github.com/user-attachments/assets/e24ee2d1-e42c-4374-81f9-bd7e37804c07)
+
