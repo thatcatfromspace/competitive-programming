@@ -216,7 +216,7 @@ quite elegant submission [here](https://leetcode.com/problems/kth-distinct-strin
 
 XOR the given numbers to find the number of differing digits. then increment count everytime a `1` is encountered (by `num & 1`) and right shift the pointer num.
 
-## Linked list cycle [LeetCode](https://leetcode.com/problems/linked-list-cycle)
+## Linked list cycle - [LeetCode](https://leetcode.com/problems/linked-list-cycle)
 
 classic tortoise and hare pointer problem. while `fast && fast->next`, iterate until both pointers are equal, return true if yes, else there is no cycle in the list.
 
@@ -293,3 +293,6 @@ the approach is a two pointer sliding window that calculates the maximum sum by 
 
 ![a539e5d3-3faa-43d3-bfcd-8a6549e4589b_1656213784 1710274](https://github.com/user-attachments/assets/e24ee2d1-e42c-4374-81f9-bd7e37804c07)
 
+## Product of array except self - [LeetCode](https://leetcode.com/problems/product-of-array-except-self)
+
+approach is to maintian a prefix and suffix product array such that `pre[i] = pre[i - 1] * nums[i - 1]` (note: product is NOT with `nums[i]`, we need everything except self) and suffix product similarly but with one element forward. then `nums[i]` simply becomes `pre[i] * suf[i]`.
