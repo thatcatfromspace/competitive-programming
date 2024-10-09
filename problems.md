@@ -250,7 +250,7 @@ a = a ^ b;
 
 it is guaranteed that `a` and `b` are swapped. 
 
-for more bit manipulation techniques, see [here]()https://leetcode.com/discuss/general-discussion/1073221/All-about-Bitwise-Operations-Beginner-Intermediate
+for more bit manipulation techniques, see [here](https://leetcode.com/discuss/general-discussion/1073221/All-about-Bitwise-Operations-Beginner-Intermediate)
 
 ## Subsets - [LeetCode](https://leetcode.com/problems/subsets)
 
