@@ -300,3 +300,7 @@ approach is to maintian a prefix and suffix product array such that `pre[i] = pr
 ## Longest consecutive sequence - [LeetCode](https://leetcode.com/problems/longest-consecutive-sequence)
 
 throw all the numbers in the array into an `unordered_set` and for each element `num` in the set, if `num - 1` is not found (i.e., `num` is the start of a sequence) in the set, increment `count` until the next consecutive element is not found. maintain a global count `largest` and at the end of each sequence end, assign `max(count, largest)` to `largest`.  
+
+## Odd event linked list - [LeetCode](https://leetcode.com/problems/odd-even-linked-list)
+
+keep joining odd and even nodes together, and at the end, join the even node linked list to the back of odd linked list. embarassing that i couldn't figure this out.
