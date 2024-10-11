@@ -296,3 +296,7 @@ the approach is a two pointer sliding window that calculates the maximum sum by 
 ## Product of array except self - [LeetCode](https://leetcode.com/problems/product-of-array-except-self)
 
 approach is to maintian a prefix and suffix product array such that `pre[i] = pre[i - 1] * nums[i - 1]` (note: product is NOT with `nums[i]`, we need everything except self) and suffix product similarly but with one element forward. then `nums[i]` simply becomes `pre[i] * suf[i]`.
+
+## Largest consecutive sequence - [LeetCode](https://leetcode.com/problems/largest-consecutive-sequence)
+
+throw all the numbers in the array into an `unordered_set` and for each element `num` in the set, if `num - 1` is not found (i.e., `num` is the start of a sequence) in the set, increment `count` until the next consecutive element is not found. maintain a global count `largest` and at the end of each sequence end, assign `max(count, largest)` to `largest`.  
