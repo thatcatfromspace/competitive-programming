@@ -1,3 +1,9 @@
+# Contents 
+
+\# LeetCode problems 
+\# Binary Search Tree (BST)
+
+
 first few problems are random, then questions are covered topicwise from [striver's dsa course](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2), starting from [here](https://github.com/thatcatfromspace/competitive-programming/blob/main/problems.md#majority-element---leetcode).
 
 ## Binary addition - [LeetCode](https://leetcode.com/problems/add-binary)
