@@ -304,3 +304,11 @@ throw all the numbers in the array into an `unordered_set` and for each element 
 ## Odd event linked list - [LeetCode](https://leetcode.com/problems/odd-even-linked-list)
 
 keep joining odd and even nodes together, and at the end, join the even node linked list to the back of odd linked list. embarassing that i couldn't figure this out.
+
+## Binary search trees
+
+try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
+search condition: `while(root)` or `while(root != NULL)`
+insertion: `if (root->val < val) insert(root->right, val) else insert(root->left, val);`
+deletion: delete if leaf node, if single child copy its value to parent and delete; if both children exist, find the next successor (left max or right min) and replace with the node value.
+
