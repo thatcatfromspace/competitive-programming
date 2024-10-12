@@ -1,7 +1,8 @@
 # Contents 
 
-\# LeetCode problems 
-\# Binary Search Tree (BST)
+\# LeetCode and GeeksForGeeks problems 
+
+\# [Binary Search Tree (BST)](https://github.com/thatcatfromspace/competitive-programming/blob/main/problems.md#binary-search-trees)
 
 
 first few problems are random, then questions are covered topicwise from [striver's dsa course](https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2), starting from [here](https://github.com/thatcatfromspace/competitive-programming/blob/main/problems.md#majority-element---leetcode).
