@@ -314,3 +314,13 @@ insertion: `if (root->val < val) insert(root->right, val) else insert(root->left
 
 deletion: delete if leaf node, if single child copy its value to parent and delete; if both children exist, find the next successor (left max or right min) and replace with the node value. [LeetCode](https://leetcode.com/problems/delete-node-in-a-bst/submissions/1419804046/)
 
+## Validate binary search tree - [LeetCode](https://leetcode.com/problems/validate-binary-search-tree) 
+
+my recusrive approach was logically sound to the point where it could validate every subtree - but if a node that should on the adjacent subtree is wrong present, it still validated it. 
+
+![image](https://github.com/user-attachments/assets/d35e9f9e-f0b7-45b8-95a1-18e46297c47a)
+
+in the above tree, `3` is not where it should be, but my solution did not accommodate for that. [my half working solution](https://leetcode.com/problems/validate-binary-search-tree/submissions/1419814765/) 
+
+the key is to create a helper function that handles the minimum and maximum value a child can have, compared to its parent. this way, cross placements are also avoided. [optimal solution](https://leetcode.com/problems/validate-binary-search-tree/submissions/1419818655/)
+
