@@ -304,13 +304,13 @@ throw all the numbers in the array into an `unordered_set` and for each element 
 
 keep joining odd and even nodes together, and at the end, join the even node linked list to the back of odd linked list. embarassing that i couldn't figure this out.
 
-## Binary search trees
+# Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
 
-search condition: `while(root)` or `while(root != NULL)`
+search condition: `while(root)` or `while(root != NULL)` [LeetCode](https://leetcode.com/problems/search-in-a-binary-search-tree/submissions/1419777596/)
 
-insertion: `if (root->val < val) insert(root->right, val) else insert(root->left, val);`
+insertion: `if (root->val < val) insert(root->right, val) else insert(root->left, val);` [LeetCode](https://leetcode.com/problems/insert-into-a-binary-search-tree/submissions/1419789254/)
 
-deletion: delete if leaf node, if single child copy its value to parent and delete; if both children exist, find the next successor (left max or right min) and replace with the node value.
+deletion: delete if leaf node, if single child copy its value to parent and delete; if both children exist, find the next successor (left max or right min) and replace with the node value. [LeetCode](https://leetcode.com/problems/delete-node-in-a-bst/submissions/1419804046/)
 
