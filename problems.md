@@ -290,7 +290,6 @@ immediately knew it was a recursive dfs solution. but had problems defining the 
 
 the approach is a two pointer sliding window that calculates the maximum sum by removing one element from the start and adding an element from the end. genius stuff.
 
-
 ![a539e5d3-3faa-43d3-bfcd-8a6549e4589b_1656213784 1710274](https://github.com/user-attachments/assets/e24ee2d1-e42c-4374-81f9-bd7e37804c07)
 
 ## Product of array except self - [LeetCode](https://leetcode.com/problems/product-of-array-except-self)
@@ -308,7 +307,10 @@ keep joining odd and even nodes together, and at the end, join the even node lin
 ## Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
+
 search condition: `while(root)` or `while(root != NULL)`
+
 insertion: `if (root->val < val) insert(root->right, val) else insert(root->left, val);`
+
 deletion: delete if leaf node, if single child copy its value to parent and delete; if both children exist, find the next successor (left max or right min) and replace with the node value.
 
