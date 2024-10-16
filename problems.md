@@ -1,6 +1,6 @@
 # Contents 
 
-\# LeetCode and GeeksForGeeks problems 
+\# [LeetCode and GeeksForGeeks problems](https://github.com/thatcatfromspace/competitive-programming/blob/main/problems.md#binary-addition)
 
 \# [Binary Search Tree (BST)](https://github.com/thatcatfromspace/competitive-programming/blob/main/problems.md#binary-search-trees)
 
@@ -331,6 +331,6 @@ in the above tree, `3` is not where it should be, but my solution did not accomm
 
 the key is to create a helper function that handles the minimum and maximum value a child can have, compared to its parent. this way, cross placements are also avoided. [optimal solution](https://leetcode.com/problems/validate-binary-search-tree/submissions/1419818655/)
 
-## Depth of binary tree
+## Maximum depth of binary tree - [LeetCode](https://leetcode.com/problems/maximum-depth-of-binary-tree)
 
 ez recursive solution. `return max(1 + maxDepth(root->left), 1 + maxDepth(root->right));`
