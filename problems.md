@@ -311,6 +311,10 @@ throw all the numbers in the array into an `unordered_set` and for each element 
 
 keep joining odd and even nodes together, and at the end, join the even node linked list to the back of odd linked list. embarassing that i couldn't figure this out.
 
+## Set matrix zeroes - [LeetCode](https://leetcode.com/problems/set-matrix-zeroes/)
+
+first solution i could think of was using 2 unordered sets to keep track of set rows and columns, which was indeed the second closest optimal approach, the most optimal approach is to use a flag to keep track of set rows and columns. 
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
@@ -334,3 +338,5 @@ the key is to create a helper function that handles the minimum and maximum valu
 ## Maximum depth of binary tree - [LeetCode](https://leetcode.com/problems/maximum-depth-of-binary-tree)
 
 ez recursive solution. `return max(1 + maxDepth(root->left), 1 + maxDepth(root->right));`
+
+
