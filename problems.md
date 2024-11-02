@@ -315,6 +315,12 @@ keep joining odd and even nodes together, and at the end, join the even node lin
 
 first solution i could think of was using 2 unordered sets to keep track of set rows and columns, which was indeed the second closest optimal approach, the most optimal approach is to use a flag to keep track of set rows and columns. 
 
+## Pascal triangle - [LeetCode](https://leetcode.com/problems/pascals-triangle)
+
+modified DP approach where the current internal element is the sum of the both the corresponding element and its predecessor in the previous array (i.e., the row on top). we create a dummy row for each iteration with a `0` in the beginning and end to make addition easier without causing an out of bounds indexing error.
+
+solution [here](https://leetcode.com/problems/pascals-triangle/submissions/1441021937/).
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
