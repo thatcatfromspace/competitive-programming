@@ -321,7 +321,7 @@ modified DP approach where the current internal element is the sum of the both t
 
 solution [here](https://leetcode.com/problems/pascals-triangle/submissions/1441021937/).
 
-# Letter combinations of a phone number - [LeetCode](https://leetcode.com/problems/letter-combinations-of-a-phone-number)
+## Letter combinations of a phone number - [LeetCode](https://leetcode.com/problems/letter-combinations-of-a-phone-number)
 
 the trick is to use backtracking to explore all possible combinations. we do not need to actually "backtrack" for any condition because we won't be reversing any previous moves, but is still a backtracking approach as we call the function for every letter to be added to the combination.
 
