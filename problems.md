@@ -357,4 +357,9 @@ the key is to create a helper function that handles the minimum and maximum valu
 
 ez recursive solution. `return max(1 + maxDepth(root->left), 1 + maxDepth(root->right));`
 
+## Level order traversal - [LeetCode](https://leetcode.com/problems/binary-tree-level-order-traversal)
+
+we use a queue to obtain the level order traversal of a BST. the root node is added to the front and from there, elements are subsequently added to the queue and the level order is obtained (until the queue becomes empty, which means that the traversal is complete).
+
+solution [here](https://leetcode.com/problems/binary-tree-level-order-traversal/submissions/1457202492/)
 
