@@ -327,6 +327,12 @@ the trick is to use backtracking to explore all possible combinations. we do not
 
 solution [here](https://leetcode.com/problems/letter-combinations-of-a-phone-number/submissions/1456973495/)
 
+## Kth smallest element of BST - [LeetCode](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
+
+my intial thought was to use a monotonic stack like we always do for k-th smallest/largest element. but the approach is a simpler, modified inorder traversal where we set a counter counting to the value of `k` at every recursive call. 
+
+solution [here](https://leetcode.com/problems/kth-smallest-element-in-a-bst/submissions/1457128238/)
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
