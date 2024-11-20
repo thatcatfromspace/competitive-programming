@@ -337,6 +337,10 @@ solution [here](https://leetcode.com/problems/kth-smallest-element-in-a-bst/subm
 
 tried implementing a pure sliding window solution but it did not account for when the repeating character was last seen. solved this issue using a hashmap to record the last known occurence of a character.
 
+## Daily temperatues - [LeetCode](https://leetcode.com/problems/daily-temperatures)
+
+montonic (decreasing) stack approach. an intriguing observation in this question is that it is the index that is stored in the stack, and not the actually temperature value for the day.
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
