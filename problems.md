@@ -333,6 +333,10 @@ my intial thought was to use a monotonic stack like we always do for k-th smalle
 
 solution [here](https://leetcode.com/problems/kth-smallest-element-in-a-bst/submissions/1457128238/)
 
+## Longest sequence without repeating characters - [LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters)
+
+tried implementing a pure sliding window solution but it did not account for when the repeating character was last seen. solved this issue using a hashmap to record the last known occurence of a character.
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
