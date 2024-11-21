@@ -354,7 +354,13 @@ dp approach. `dp[i][j] = dp[i - 1][j] + dp[i][j - 1]` for all `i > 0` and `j > 0
 ## Trie implementation - [LeetCode](https://leetcode.com/problems/implement-trie-prefix-tree)
 
 the approach is to build a `TrieNode` with 26 children of the same node, and a boolean to mark the end of the word. we don't actually store words/letters in each node, just the index of the succeeding node at a letter's index if it exists.
- 
+
+## Word break - [LeetCode](https://leetcode.com/problems/word-break)
+
+assumed it was a trie implementation, but recommended approach is dp (it's always dp). create a boolean array of size `s + 1` and repeatedly check if a valid substring can be made from the starting index to the length of a word. best we can do is `O(mnw)`.
+
+solution [here](https://leetcode.com/problems/word-break/submissions/1459371402/)
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
