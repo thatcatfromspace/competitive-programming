@@ -347,6 +347,10 @@ the approach is not a hashmap. each occurence including duplicates needs to be a
 
 solution [here](https://leetcode.com/problems/find-common-characters/submissions/1458980085/)
 
+## Unique paths II - [LeetCode](https://leetcode.com/problems/unique-paths-ii)
+
+dp approach. `dp[i][j] = dp[i - 1][j] + dp[i][j - 1]` for all `i > 0` and `j > 0`.
+ 
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
