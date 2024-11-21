@@ -350,6 +350,10 @@ solution [here](https://leetcode.com/problems/find-common-characters/submissions
 ## Unique paths II - [LeetCode](https://leetcode.com/problems/unique-paths-ii)
 
 dp approach. `dp[i][j] = dp[i - 1][j] + dp[i][j - 1]` for all `i > 0` and `j > 0`.
+
+## Trie implementation - [LeetCode](https://leetcode.com/problems/implement-trie-prefix-tree)
+
+the approach is to build a `TrieNode` with 26 children of the same node, and a boolean to mark the end of the word. we don't actually store words/letters in each node, just the index of the succeeding node at a letter's index if it exists.
  
 # Binary search trees
 
