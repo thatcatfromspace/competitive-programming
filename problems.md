@@ -341,6 +341,12 @@ tried implementing a pure sliding window solution but it did not account for whe
 
 montonic (decreasing) stack approach. an intriguing observation in this question is that it is the index that is stored in the stack, and not the actually temperature value for the day.
 
+## Find common characters - [LeetCode](https://leetcode.com/problems/find-common-characters)
+
+the approach is not a hashmap. each occurence including duplicates needs to be accounted for, which requires a frequency array. 
+
+solution [here](https://leetcode.com/problems/find-common-characters/submissions/1458980085/)
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
