@@ -361,6 +361,12 @@ assumed it was a trie implementation, but recommended approach is dp (it's alway
 
 solution [here](https://leetcode.com/problems/word-break/submissions/1459371402/)
 
+## Find words II - [LeetCode](https://leetcode.com/problems/word-search-ii/)
+
+the implementation is a trie + DFS on the given grid. create an own trie implementation and then search for the word in the given matrix.
+
+solution [here](https://leetcode.com/problems/word-search-ii/submissions/1459704320/)
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
