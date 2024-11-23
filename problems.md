@@ -361,11 +361,22 @@ assumed it was a trie implementation, but recommended approach is dp (it's alway
 
 solution [here](https://leetcode.com/problems/word-break/submissions/1459371402/)
 
-## Find words II - [LeetCode](https://leetcode.com/problems/word-search-ii/)
+## Find words II - [LeetCode](https://leetcode.com/problems/word-search-ii)
 
 the implementation is a trie + DFS on the given grid. create an own trie implementation and then search for the word in the given matrix.
 
 solution [here](https://leetcode.com/problems/word-search-ii/submissions/1459704320/)
+
+## Maximum nesting depth of parenthesis - [LeetCode](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses)
+
+`current depth = number of ( to left - number of ) to left`. works because it is guaranteed that all test cases are VPS (valid parenthesis strings).
+
+## Pacific Atlantic water flow - [LeetCode](https://leetcode.com/problems/pacific-atlantic-water-flow)
+
+there are two tricks to simplify the problem:
+
+- start from the edges and try to move towards the higher heights instead of starting from the middle and moving to the edges
+- maintain separate visitted matrices for atlantic and pacific, then find the intersection 
 
 # Binary search trees
 
