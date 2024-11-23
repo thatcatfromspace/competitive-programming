@@ -378,6 +378,8 @@ there are two tricks to simplify the problem:
 - start from the edges and try to move towards the higher heights instead of starting from the middle and moving to the edges
 - maintain separate visitted matrices for atlantic and pacific, then find the intersection 
 
+solution [here](https://leetcode.com/problems/pacific-atlantic-water-flow/submissions/1460532830/)
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
