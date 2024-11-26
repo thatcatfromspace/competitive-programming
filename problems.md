@@ -410,3 +410,9 @@ we use a queue to obtain the level order traversal of a BST. the root node is ad
 
 solution [here](https://leetcode.com/problems/binary-tree-level-order-traversal/submissions/1457202492/)
 
+## Binary tree right side view - [LeetCode](https://leetcode.com/problems/binary-tree-right-side-view)
+
+the approach is to use level order traversal and save the last node (i.e, the rightmost node) to the array. this way we can achieve the level order traversal view of the level from the top to bottom.
+
+solution [here](https://leetcode.com/problems/binary-tree-right-side-view/submissions/1463299456/)
+
