@@ -190,6 +190,8 @@ shamelessly use python. genius one liner crafted by me.
 
 add the elements of the LL to an array `arr`, compare if `arr[i]` equals `arr[size-i-1]` for `i = 0 to size/2`.  
 
+optimal approach: `O(1)` space: traverse half the linked list using fast/slow pointers then reverse the list. traverse the other half of the old LL and the reverse new LL (which is nothing but the first half of the LL) to check if the value of each node is equal.
+
 ## Valid anagram - [LeetCode](https://leetcode.com/problems/valid-anagram)
 
 approach 1: `O(n*logn)` - separate the array into characters, push it into 2 arrays, sort the arrays and compare
