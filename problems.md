@@ -422,3 +422,10 @@ the approach is to use level order traversal and save the last node (i.e, the ri
 
 solution [here](https://leetcode.com/problems/binary-tree-right-side-view/submissions/1463299456/)
 
+## Counting number of nodes 
+
+```cpp
+if (!root) return 0;
+return 1 + countNodes(root->left) + countNodes(root->right);
+```
+
