@@ -382,6 +382,10 @@ there are two tricks to simplify the problem:
 
 solution [here](https://leetcode.com/problems/pacific-atlantic-water-flow/submissions/1460532830/)
 
+## H-index - [LeetCode](https://leetcode.com/problems/h-index/)
+
+iterate through the sorted array of citations, return `size - i` if `citations[i] > size - i` for some `i`, else return `0`.
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
