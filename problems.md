@@ -386,6 +386,16 @@ solution [here](https://leetcode.com/problems/pacific-atlantic-water-flow/submis
 
 iterate through the sorted array of citations, return `size - i` if `citations[i] >= size - i` for some `i`, else return `0`.
 
+## Coin change - [LeetCode](https://leetcode.com/problems/coin-change)
+
+classic 1D DP problem. the memoizaiton array is initialized as `vector<int> minCoins(amount + 1, amount + 1)` and stores the minimum number of coins required for each amount less than the actual, given amount. then, for every valid entry such that `i - coins[j] >= 0`, adjust the value of `minCoins[i]` by taking the minimum.
+
+solution [here](https://leetcode.com/problems/coin-change/submissions/1464002071/)
+
+## Unique paths - [LeetCode](https://leetcode.com/problems/unique-paths)
+
+2D matrix traversal problem. `dp[i][j] = dp[i - 1][j] + dp[i][j - 1] for all i, j > 0`.
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
