@@ -402,6 +402,14 @@ sliding window approach. add all the charaters with their frequencies to a hashm
 
 solution [here](https://leetcode.com/problems/permutation-in-string/submissions/1464074822/)
 
+## Top K frequent elements - [LeetCode](https://leetcode.com/problems/top-k-frequent-elements)
+
+catch the frequency of each number in a hashmap, then insert all the pairs into a priority queue, pop the top K elements.
+
+NOTE: to write a custom comparator for the priority queue, create a struct/class with and overload the `()` operator for cusotm compare.
+
+solution [here](https://leetcode.com/problems/top-k-frequent-elements/submissions/1464126763/)
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
