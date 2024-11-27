@@ -396,6 +396,12 @@ solution [here](https://leetcode.com/problems/coin-change/submissions/1464002071
 
 2D matrix traversal problem. `dp[i][j] = dp[i - 1][j] + dp[i][j - 1] for all i, j > 0`.
 
+## Permutations in a string - [LeetCode](https://leetcode.com/problems/permutation-in-string)
+
+sliding window approach. add all the charaters with their frequencies to a hashmap start matching the pattern in the given string with a window size of 1, and keep increasing window size until the matches occur. if not, increment both left and right pointers of the window and continue matchinf.
+
+solution [here](https://leetcode.com/problems/permutation-in-string/submissions/1464074822/)
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
