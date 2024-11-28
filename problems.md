@@ -410,6 +410,15 @@ NOTE: to write a custom comparator for the priority queue, create a struct/class
 
 solution [here](https://leetcode.com/problems/top-k-frequent-elements/submissions/1464126763/)
 
+## Most beautiful item for each query - [LeetCode](https://leetcode.com/problems/most-beautiful-item-for-each-query)
+
+the idea is to sort the items array first and then binary search for the maximum beauty. there was one thing that i overlooked - preprocessing the given array to assign items the maximum beauty so far for the given price.
+
+NOTE: sorting a `vector<vector<int>>` sorts the member arrays lexicographically.
+
+solution [here](https://leetcode.com/problems/most-beautiful-item-for-each-query/submissions/1464812465)
+
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
