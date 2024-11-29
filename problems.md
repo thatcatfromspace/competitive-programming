@@ -455,6 +455,12 @@ the approach is to use level order traversal and save the last node (i.e, the ri
 
 solution [here](https://leetcode.com/problems/binary-tree-right-side-view/submissions/1463299456/)
 
+## Course schedule - [LeetCode](https://leetcode.com/problems/course-schedule)
+
+easy. return true if a topological sort can be performed on the given courses. another approach is to find if the graph has cycles (Kahn's algorithm), but finding if a topo sort exists is good enough because every directed acyclic graph has a topological sorting.
+
+solution [here](https://leetcode.com/problems/course-schedule/submissions/1465741933/)
+
 ## Counting number of nodes 
 
 ```cpp
