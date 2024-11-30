@@ -418,6 +418,9 @@ NOTE: sorting a `vector<vector<int>>` sorts the member arrays lexicographically.
 
 solution [here](https://leetcode.com/problems/most-beautiful-item-for-each-query/submissions/1464812465)
 
+## Kth largest element in array - [LeetCode](https://leetcode.com/problems/kth-largest-element-in-an-array)
+
+straightforward max heap question if not for checks for repetition. so what we do instead is create a min heap (counter-intuitive?) and insert elements, and when the size of the heap exceeds `k`, we pop the smallest element after inserting the current element. this way, we finally end up with a heap that contains the `k` max elements.
 
 # Binary search trees
 
