@@ -424,6 +424,18 @@ solution [here](https://leetcode.com/problems/most-beautiful-item-for-each-query
 
 straightforward max heap question if not for checks for repetition. so what we do instead is create a min heap (counter-intuitive?) and insert elements, and when the size of the heap exceeds `k`, we pop the smallest element after inserting the current element. this way, we finally end up with a heap that contains the `k` max elements.
 
+## Course schedule - [LeetCode](https://leetcode.com/problems/course-schedule)
+
+easy. return true if a topological sort can be performed on the given courses. another approach is to find if the graph has cycles (Kahn's algorithm), but finding if a topo sort exists is good enough because every directed acyclic graph has a topological sorting.
+
+solution [here](https://leetcode.com/problems/course-schedule/submissions/1465741933/)
+
+## Optimal partition of string - [LeetCode](https://leetcode.com/problems/optimal-partition-of-string)
+
+easy. used a bitmask to keep track of characters that have already occured and increment the count when a character has already been recorded occurs, and then reset the mask to 0.
+
+solution [here](https://leetcode.com/problems/optimal-partition-of-string/submissions/1467459848)
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
@@ -459,12 +471,6 @@ solution [here](https://leetcode.com/problems/binary-tree-level-order-traversal/
 the approach is to use level order traversal and save the last node (i.e, the rightmost node) to the array. this way we can achieve the level order traversal view of the level from the top to bottom.
 
 solution [here](https://leetcode.com/problems/binary-tree-right-side-view/submissions/1463299456/)
-
-## Course schedule - [LeetCode](https://leetcode.com/problems/course-schedule)
-
-easy. return true if a topological sort can be performed on the given courses. another approach is to find if the graph has cycles (Kahn's algorithm), but finding if a topo sort exists is good enough because every directed acyclic graph has a topological sorting.
-
-solution [here](https://leetcode.com/problems/course-schedule/submissions/1465741933/)
 
 ## Counting number of nodes 
 
