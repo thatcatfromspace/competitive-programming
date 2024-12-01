@@ -65,6 +65,8 @@ def last_word(word):
 	return len(word.strip().split(' ')[-1])
 ```
 
+For C++, use the `stringstream` to constantly fetch the next word and calculate its size.
+
 
 ## Climbing stairs - [LeetCode](https://leetcode.com/problems/climbing-stairs)
 
