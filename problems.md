@@ -436,6 +436,10 @@ easy. used a bitmask to keep track of characters that have already occured and i
 
 solution [here](https://leetcode.com/problems/optimal-partition-of-string/submissions/1467459848)
 
+## Group anagrams - [LeetCode](https://leetcode.com/problems/group-anagrams)
+
+sort each string and use the sorted string as the key to store the original strings in hashmap. retrieve each element from the hashmap and append to return array.
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
