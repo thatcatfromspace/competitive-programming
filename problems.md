@@ -440,6 +440,10 @@ solution [here](https://leetcode.com/problems/optimal-partition-of-string/submis
 
 sort each string and use the sorted string as the key to store the original strings in hashmap. retrieve each element from the hashmap and append to return array.
 
+## Minimum path sum - [LeetCode](https://leetcode.com/problems/minimum-path-sum)
+
+don't use a dp table, use the actual grid to calculate the minimum path sum using `dp[i][j] = min(dp[i-1][j], dp[i][j-1])`.
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
