@@ -490,4 +490,4 @@ return 1 + countNodes(root->left) + countNodes(root->right);
 ## Lowest common ancestor - [LeetCode]()
 
 
-
+recursively move left/right until there is a need to diverge. this is the lowest common ancestor.
