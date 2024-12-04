@@ -444,6 +444,10 @@ sort each string and use the sorted string as the key to store the original stri
 
 don't use a dp table, use the actual grid to calculate the minimum path sum using `dp[i][j] = min(dp[i-1][j], dp[i][j-1])`.
 
+## Make string using cyclic increments - [LeetCode](https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments)
+
+two pointer approach. increment pointers based on equality or cyclic increment `(str2[p2] - str1[p1] + 26) % 26 <= 1`. 
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
