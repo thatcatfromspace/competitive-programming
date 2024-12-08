@@ -448,6 +448,10 @@ don't use a dp table, use the actual grid to calculate the minimum path sum usin
 
 two pointer approach. increment pointers based on equality or cyclic increment `(str2[p2] - str1[p1] + 26) % 26 <= 1`. 
 
+## Find the difference - [LeetCode](https://leetcode.com/problems/find-the-difference)
+
+easy problem, but instead of using a hashmap/hashset, just find the difference of the sum of ASCII values of both strings.
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
