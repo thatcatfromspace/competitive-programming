@@ -452,6 +452,12 @@ two pointer approach. increment pointers based on equality or cyclic increment `
 
 easy problem, but instead of using a hashmap/hashset, just find the difference of the sum of ASCII values of both strings.
 
+## The K weakest rows in a matrix - [LeetCode](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix)
+
+sorting/priority queue based approach. arrival on solution was straightforward but a few testcases failed because the case where two rows having equal number of soldiers (case II) wasn't considered. fixed it by tweaking the `Compare` comparator. 
+
+solution [here](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/submissions/1485440370/)
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
