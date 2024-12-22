@@ -462,6 +462,12 @@ solution [here](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/sub
 
 simplest solution is using the intuition that the answer is `ans = max(ans, (totalSum - currSum) * currSum`, where `totalSum` can be calculated dynamically using DFS.
 
+## Product of last K numbers - [LeetCode](https://leetcode.com/problems/product-of-the-last-k-numbers)
+
+mad intuitive solution is to use a prefix product array, and clear it everytime a 0 is encountered.
+
+solution [here](https://leetcode.com/problems/product-of-the-last-k-numbers/submissions/1485543977/)
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
