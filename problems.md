@@ -458,6 +458,10 @@ sorting/priority queue based approach. arrival on solution was straightforward b
 
 solution [here](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/submissions/1485440370/)
 
+## Maximum product of splitted binary tree - [LeetCode](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree)
+
+simplest solution is using the intuition that the answer is `ans = max(ans, (totalSum - currSum) * currSum`, where `totalSum` can be calculated dynamically using DFS.
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
