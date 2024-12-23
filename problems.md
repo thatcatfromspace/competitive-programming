@@ -468,6 +468,10 @@ mad intuitive solution is to use a prefix product array, and clear it everytime 
 
 solution [here](https://leetcode.com/problems/product-of-the-last-k-numbers/submissions/1485543977/)
 
+## Generate a String With Characters That Have Odd Counts - [LeetCode](https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts)
+
+stupidly easy approach. return `n` 'a's if `n` is odd, else return `n - 1` 'a's followed by one 'b'.
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
