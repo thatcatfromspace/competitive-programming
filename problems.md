@@ -478,6 +478,12 @@ we need to find the maximum height achieved by starting with either of the balls
 
 my (quite elegant) solution [here](https://leetcode.com/problems/maximum-height-of-a-triangle/solutions/6180055/c-5-liner-recursion-beats-100/)
 
+## Escape the ghosts - [LeetCode](https://leetcode.com/problems/escape-the-ghosts)
+
+simplest approach is to find the Manhattan distance between each ghost and target and check if it is less than or equal to the distance from `(0, 0)` to target, return false if yes, return true if all ghosts fail the distance check.
+
+solution [here](https://leetcode.com/problems/escape-the-ghosts/submissions/1487229280/)
+
 # Binary search trees
 
 try to perform all operations recursively. not as efficient as iterative but atleast your code looks elegant. 
