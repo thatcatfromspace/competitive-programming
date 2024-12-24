@@ -468,9 +468,15 @@ mad intuitive solution is to use a prefix product array, and clear it everytime 
 
 solution [here](https://leetcode.com/problems/product-of-the-last-k-numbers/submissions/1485543977/)
 
-## Generate a String With Characters That Have Odd Counts - [LeetCode](https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts)
+## Generate a string With characters that have odd counts - [LeetCode](https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts)
 
 stupidly easy approach. return `n` 'a's if `n` is odd, else return `n - 1` 'a's followed by one 'b'.
+
+## Maximum height of triangle - [LeetCode](https://leetcode.com/problems/maximum-height-of-a-triangle)
+
+we need to find the maximum height achieved by starting with either of the balls (red and blue). 
+
+my (quite elegant) solution [here](https://leetcode.com/problems/maximum-height-of-a-triangle/solutions/6180055/c-5-liner-recursion-beats-100/)
 
 # Binary search trees
 
