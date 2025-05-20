@@ -536,3 +536,9 @@ recursively move left/right until there is a need to diverge. this is the lowest
 ## Last stone weight - [LeetCode](https://leetcode.com/problems/last-stone-weight)
 
 it's not straightforward at first that a heap must be used. the logic is to keep hitting the largest 2 stones together at any given time, so we use a heap for the same, until the heap size becomes less than 1. if one element, remains, the largest weight remaining is the top of the heap. if not element remains, all of them have been destroyed, leading to 0 remaining weight.
+
+## Zero array transformation I - [LeetCode](https://leetcode.com/problems/zero-array-transformation-i/)
+
+the beautiful concept of difference arrays overlapping with prefix sum arrays comes here. this method can be applied to any problem requires `Q` queries to be executed on an array on all elements b/w a lower bound `L` and upper bound `R`. 
+
+explanation here: https://youtu.be/96RG7EBF8LI
