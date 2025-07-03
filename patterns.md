@@ -40,3 +40,7 @@ using `unordered_set<T>`
 
 
 explore std::bitset
+
+## binary search pattern
+
+this pattern usually involves questions like minimizing/maximizing a constraint based on another constraint. for example, finding the least weight capacity of a conveyor to ship `n` goods in `d` days, aggressive cows, painter partition, splitting subarray into k parts with minimum max sum etc.
