@@ -548,3 +548,7 @@ explanation here: https://youtu.be/96RG7EBF8LI
 greedy approach. sort the points by the end coordinate, and shoot the first arrow at the end of the first balloon's end. if the end is less than the start of the next balloon, add 1 to arrows and set the new end as the next balloon's end.
 
 [solution](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/submissions/1683850385/) 
+
+## Largest divisiblle subset - Leetcode 368
+
+sort the array first, then apply a LIS dp (double for loop) but instead of greater condition, check for divisibility. `dp[n]` will give the size of the subarray, maintain a `prev` array to track the last element.
